@@ -1,33 +1,38 @@
-# OptionsTradingStartegyML
+# 📈 OptionsTradingStrategyML
 
-## 1. Environmental Setup
+## 1. 🌐 Environmental Setup
 
-a)Platform - Google Colab/Jupyter Notebook
+- **Platform**: Google Colab / Jupyter Notebook  
+- **Python Version**: Tested on Python 3.11.13 (default in Google Colab)  
+- **GPU/CPU**:  
+  - **Recommended**: Use GPU runtime for faster training  
+  - *In Colab*: Go to `Runtime > Change runtime type > Select GPU`  
+- **Data Location**:  
+  [options_data_2023.csv](https://drive.google.com/file/d/1hdItv8l8Qj102oAB75la9XubqYydxbkD/view?usp=sharing)
 
-b)Python Version - Tested on Python 3.11.13 (default in Google Colab)
+---
 
-c)GPU/CPU - Recommended: Use GPU runtime for faster training (In Colab: Runtime > Change runtime type > Select GPU)
+## 2. 📦 Dependencies
 
-d)Data Location - https://drive.google.com/file/d/1hdItv8l8Qj102oAB75la9XubqYydxbkD/view?usp=sharing  (options_data_2023.csv)
+- `python` version: **3.11.13**  
+- `pandas`: **2.2.2**  
+- `numpy`: **2.0.2**  
+- `tensorflow`: **2.18.0**  
+- `keras`: **3.8.0**  
+- `scikit-learn`: **1.6.1**  
+- `matplotlib`: **3.10.0**
 
+📁 **Installation:**
 
-## 2. Dependencies
-
-Python version: 3.11.13  
-pandas version: 2.2.2  
-numpy version: 2.0.2  
-tensorflow version: 2.18.0  
-keras version: 3.8.0  
-scikit-learn version: 1.6.1  
-matplotlib version: 3.10.0
-
+```bash
+pip install -r requirements.txt
+```
+```python
+!pip install -r requirements.txt
+```
 (requirements.txt file provided)
 
-For bash: pip install -r requirements.txt
-
-For python: !pip install -r requirements.txt
-
-
+---
 ## 3. Script Usage Examples
 
 ### Run in Google Colab
@@ -35,7 +40,7 @@ For python: !pip install -r requirements.txt
 Click the button below to open the notebook in Colab:  
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID)
 
-
+---
 
 ## 📊 Technical Indicators Used
 
@@ -46,7 +51,7 @@ Click the button below to open the notebook in Colab:
   - **Price above EMA-200** → Bullish bias  
   - **Price below EMA-200** → Bearish bias
 
----
+-
 
 ### 2. ⚡ Relative Strength Index (RSI)
 - Measures **momentum** to identify whether an asset is **overbought or oversold**.
@@ -55,7 +60,7 @@ Click the button below to open the notebook in Colab:
   - **RSI < 50** → Oversold (potential **buy** zone)
 - Often used in **mean-reversion strategies**.
 
----
+-
 
 ### 3. 🔄 Moving Average Convergence Divergence (MACD)
 - Combines **trend-following** and **momentum** analysis.
@@ -67,7 +72,7 @@ Click the button below to open the notebook in Colab:
   - **Bearish crossover**: MACD Line crosses below Signal Line → **Sell**
 - Detects **trend reversals** and **momentum shifts**.
 
----
+-
 
 ### 4. 🌪️ Average True Range (ATR)
 - Measures **market volatility**, not direction.
@@ -111,7 +116,7 @@ Click the button below to open the notebook in Colab:
 - It divides the learning rate by an **exponentially decaying average of squared gradients**.
 - Helps keep weight updates **balanced and stable**, especially when gradients are large or noisy.
 
-
+---
 
 ## 🔢 Backtesting Parameters
 
