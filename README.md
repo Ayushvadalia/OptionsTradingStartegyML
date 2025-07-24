@@ -154,6 +154,14 @@ The confidence score combines technical indicators and ML model output:
 - NaNs in indicators are safely skipped to avoid false signals.
 - Expiry mapping, ATM strike selection, and PnL computation are handled in the backtesting engine.
 
+  ---
+  ## Result and Interpretation
+- Sharpe Ratio: -0.7914946668693227
+- Max Drawdown (in %): -59174.095437860095
+- Total Return: -52891.749999999054
+
+  ---
+  
 
 
 
